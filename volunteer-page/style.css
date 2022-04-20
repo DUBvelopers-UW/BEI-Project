@@ -1,0 +1,116 @@
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #4B2E83;
+    letter-spacing: -2%;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    margin-top: 150px;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #4B2E83;
+    letter-spacing: 4%;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+#info{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #24173F;
+    line-height: 140%;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 80px;
+
+}
+body{
+    background-color: #F9F1FF;
+}
+
+#hero{
+    width: 100vw;
+    opacity: 0.2;
+}
+#icon{
+    position: absolute;
+    bottom: 8px;
+    right: 50%;
+}
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 80px;
+    letter-spacing: -2%;
+}
+.hero {
+    background-color: #24173F;
+}
+
+#notice{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #24173F;
+    line-height: 140%;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+button{
+    margin-bottom: 200px;
+    position: static;
+    width: 272px;
+    height: 32px;
+    left: 16px;
+    top: 16px;
+
+    /* Button */
+    font-family: 'Work Sans', sans-serif;
+    font-style:normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    /* Eggshell */
+    color: #FFFBF2;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* Purple Dust */
+    background: #7E67AA;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
