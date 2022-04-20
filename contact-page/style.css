@@ -1,0 +1,102 @@
+#top-page {
+
+    background-image: url("./images/contact-us-hero.png");
+    background-size: cover;
+    background-color: #2C1B4C;
+    opacity: 0.8;
+    position: absolute;
+    height: 928px;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background-blend-mode: overlay;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#top-page h1 {
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 81px;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
+
+#down {
+    position: absolute;
+    left: 48%;
+    top: 90%;
+}
+
+#in-touch {
+    position: absolute;
+    top: 1103px;
+    width: 100vw;
+}
+
+#in-touch-title {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: -0.02em;
+    color: #4B2E83;
+}
+
+#subtitle {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0em;
+}
+
+#contacting h3 {
+    font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: -0.02em;
+    color: #4B2E83;
+
+    height: 41px;
+
+}
+
+#contacting {
+    position: absolute;
+    top: 1365px;
+    width: 100vw;
+
+    display: flex;
+}
+
+#contact-info {
+    flex: 1;
+    display: block;
+}
+
+#contact-info > * {
+    text-align: center;
+}
+
+#contact-info center {
+    position: absolute;
+    top: 570px; 
+    left: 9.2%;
+}
+
+#message-box {
+    height: 795px;
+    width: 45%;
+    border-radius: 8px;
+    background: #4B2E83;
+
+}
