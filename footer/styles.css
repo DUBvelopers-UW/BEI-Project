@@ -1,0 +1,21 @@
+
+footer {
+/* some of these stylings should really be in a general body ruleset */
+  font-family: 'Montserrat', sans-serif;
+  background-color: #2C1B4C;
+  color: #FFFFFF;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+/* incomplete just for current visability */
+button {
+
+}
+
+#logo {
+  width: 129px;
+  height: 158px;
+}
