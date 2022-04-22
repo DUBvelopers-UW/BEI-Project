@@ -1,13 +1,35 @@
+/* honestly a mess. positioning is terrible */
+body {
+  margin: 0px;
+}
 
 footer {
 /* some of these stylings should really be in a general body ruleset */
   font-family: 'Montserrat', sans-serif;
   background-color: #2C1B4C;
   color: #FFFFFF;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 511px;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+footer > p {
+  position: absolute;
+  align-self: center;
+  bottom: 5px;
 }
 
 a {
   color: #FFFFFF;
+  font-size: 12pt;
 }
 
 /* incomplete just for current visability */
@@ -15,7 +37,53 @@ button {
 
 }
 
-#logo {
+#about {
+  position: absolute;
+  width: 100px;
+  height: 110px;
+/* wrong lol */
+  bottom: 322px;
+  left: 80px;
+}
+
+#volunteer {
+  position: absolute;
+  width: 171px;
+  height: 71px;
+  left: 80px;
+  /* wrong lol */
+  bottom: 175px;
+}
+
+#questions {
+  position: absolute;
+  width: 183px;
+  height: 86px;
+  left: 400px;
+  bottom: 322px;
+}
+
+#connect {
+  position: absolute;
+  width: 253px;
+  height: 97px;
+  bottom: 175px;
+  left: 400px;
+}
+
+#connect img {
+  width: 48px;
+}
+
+#description > p{
+  position: absolute;
+  width: 457px;
+  height: 145px;
+  bottom: 175px;
+  left: 700px;
+}
+
+#description img {
   width: 129px;
   height: 158px;
 }
