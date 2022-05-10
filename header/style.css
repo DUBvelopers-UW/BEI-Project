@@ -8,7 +8,10 @@
 header {
     box-shadow: 0px 2px 4px rgba(75, 46, 131, 0.5);
     height: 81px;
+    position: fixed;
     width: 100vw;
+    background: white;
+    z-index: 1;
 }
 
 header .inner {
@@ -42,6 +45,7 @@ header .logo img {
 }
 
 header .logo p {
+    color: #24173f;
     font-family: 'El Messiri', sans-serif;
     font-size: 20px;
     line-height: 20px;
@@ -90,7 +94,6 @@ header nav a:hover {
 header .searchbar {
     align-items: center;
     background: #e5dfeb;
-    color: white;
     display: flex;
     padding: 1rem;
     border-radius: 0.3rem;
@@ -104,6 +107,7 @@ header .searchbar {
 header .searchbar input {
     background: #e5dfeb;
     border: none;
+    caret-color: transparent;
     color: #24173f;
     float: left;
     font-family: 'Montserrat';
@@ -130,9 +134,8 @@ header .searchbar img {
     margin-right: 7.5px;
 }
 
-header a:hover::after {
+header nav a:hover::after {
     content: "";
-    /* Rectangle 57 */
 
     position: absolute;
     width: 100%;
@@ -140,7 +143,6 @@ header a:hover::after {
     left: 0;
     bottom: -6px;
 
-    /* Sand */
     background-color: #B3A27E;
     border-radius: 8px;
 }
@@ -163,4 +165,84 @@ header .searchbar #line {
     position: relative;
     transform: rotate(45deg);
     width: 4px;
+}
+
+body {
+    position: relative;
+    background-color: #fcfaff;
+}
+
+#results #search {
+    position: absolute;
+    left: 143px;
+    top: 166px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+
+    color: #2C1B4C;
+}
+
+#results #line {
+    position: absolute;
+    width: 1202px;
+    height: 0px;
+    left: 143px;
+    top: 245px;
+
+    border: 0.5px solid #4B2E83;
+}
+
+#results h3 {
+    position: absolute;
+    width: 337.49px;
+    height: 28px;
+    left: 143px;
+    top: 323px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #4B2E83;
+}
+
+#results p {
+    position: absolute;
+    width: 1225px;
+    height: 56px;
+    left: 143px;
+    top: 377px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+
+    color: #2C1B4C;
+}
+
+footer {
+    height: 511px;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: red;
+}
+
+body {
+    min-height: 150vh;  /* Testing purposes */
 }

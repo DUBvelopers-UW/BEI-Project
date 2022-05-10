@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:bold" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="nav.js"></script>
 </head>
 
 <body>
+    <!-- Navigation bar -->
     <header>
         <div class="inner">
-            <div class="logo">
-                <div>
-                    <img src="bei-logo.png" alt="BEI logo">
-                </div>
+            <a class="logo" href="">
+                <div><img src="images/bei-logo.png" alt="BEI logo"></div>
                 <p id="logo-text">UW Brain Exercise Initiative</p>
-            </div>
+            </a>
             <nav>
                 <li><span><a href="">home</a></span></li>
                 <li><span><a href="">about us</a></span></li>
@@ -30,13 +34,25 @@
                         <div id="circle"></div>
                         <div id="line"></div>
                     </div>
-                    <div>
-                        <input type="text" placeholder="search" />
-                    </div>
+                    <div><input type="text" placeholder="search" /></div>
                 </li>
             </nav>
         </div>
     </header>
+
+    <!-- Search results page -->
+    <div id="results">
+        <h2 id="search">Showing search results for "typing search..."</h2>
+        <div id="line"></div>
+        <div id="result1">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sit 
+                porttitor sit rhoncus, proin. Elementum ipsum vestibulum fringilla</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer></footer>
 </body>
 
 </html>
