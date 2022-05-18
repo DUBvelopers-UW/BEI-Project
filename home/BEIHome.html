@@ -1,99 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Montserrat:wght@500;700&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="inner">
-            <div class="logo">
-                <div>
-                    <img src="images/bei-full-logo.png" alt="BEI logo">
-                </div>
-            </div>
-            <nav>
-                <li><span><a href="">HOME</a></span></li>
-                <li><span><a href="">ABOUT US</a></span></li>
-                <li><span><a href="">VOLUNTEER</a></span></li>
-                <li><span><a href="">CONTACT</a></span></li>
-                <li>
-                    <span>
-                        <img src="images/search.png" alt="search icon">
-                        <input type="text" placeholder="search">
-                    </span>
-                </li>
-            </nav>
-        </div>
-    </header>
-
+    
     <!-- Learn More Section-->
-    <div class="header-container">
+    <div class="top">
         <div class="wrapper">
-            <header>
-                <div class="beiWords">
-                    <h1>UW Brain Exercise Initiative</h1>
-                    <a href="#">
-                        Learn More
-                    </a>
-                </div>
-                <div class="bigImage">
-                    <img src="images/home-hero.png" alt="" />
-                </div>
-                <div class="coolIcon">
-                    <img src="images/chevron-down.png" alt="" />
-                </div>
-            </header>
+            <div class = "top-text">
+                <h1>UW Brain Exercise Initiative</h1>
+                <button id="button1" onclick="window.location.href='https://google.com';">LEARN MORE</button>
+            </div>
         </div>
+        <img id="icon" src="images/chevron-down.png" alt="" />
     </div>
 
-    <!-- Our Goal-->
-    <div class="goal">
-        <div class="wrapper">
-            <header>
-                <div class="ourGoal">
+    <div id="bottom">
+        <!-- Our Goal-->
+        <div class = "wrapper">
+            <div class="goal">
+                <div class="goal-text">
                     <h2>Our Goal</h2>
                     <subtitle>Help Seniors Remember and Thrive</subtitle>
+                    <p>The Brain Exercise Initiative uses simple math,<br> writing and reading aloud exercises as an<br> 
+                        intervention to improve cognition function in<br> those with Alzheimer's Disease<br>
+                    </p>
+                <center><button id="button2" onclick="window.location.href='https://google.com';">ABOUT US</button></center>
+                </div>
+            </div>
 
-                    <body>The Brain Exercise Initiative uses simple math,<br> writing and reading aloud exercises as an<br> intervention to improve cognition function in<br> those with Alzheimer's Disease<br>
-                    </body>
-                    <button> About Us </button>
-                </div>
-                <div class="homeImage1">
-                    <img src="images/home-image-1.png" alt="" />
-                </div>
-            </header>
-        </div>
-    </div>
+            <div class="image1"> 
+                <img id = "homeImage1" src="images/home-image-1.png" alt="" />
+            </div>
+        
 
-    <!-- Volunteer -->
-    <div class="volunteerDiv">
-        <div class="wrapper">
-            <header>
-                <div class="homeImage2">
-                    <img src="images/home-image-2.png" alt="">
-                </div>
-                <div class="volunteer">
+        <!-- Volunteer -->
+        
+            <div class="image2">
+                <img id = "homeImage2" src="images/home-image-2.png" alt="">
+            </div>
+            
+            <div class="volunteer">
+                <div class="volunteer-text">
                     <h2>Volunteer</h2>
-                    <subtitle>Passionate about neurodegenerative diseases and/or Alzheimer's?
-                    </subtitle>
-
-                    <body>
-                        Become a part of our community of volunteers<br> to engage with seniors in retirement homes in<br> the Seattle area by leading read aloud<br> passages, math exercises, and simple writing<br> tasks!
-                    </body>
-                    <button> Volunteer </button>
+                    <subtitle>Passionate about neurodegenerative diseases and/or Alzheimer's?</subtitle>
+                    <p>
+                        Become a part of our community of volunteers<br> to engage with seniors in retirement homes in<br> the Seattle area by leading read aloud<br> passages, math exercises, and simple writing<br> tasks!<br>
+                    </p>
+                    <center><button id="button2" onclick="window.location.href='https://google.com';">VOLUNTEER</button></center>
                 </div>
-            </header>
+            </div>
         </div>
     </div>
-
-
-
 </body>
 
 </html>
