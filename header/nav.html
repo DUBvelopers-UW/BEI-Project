@@ -12,8 +12,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="nav.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <header>
         <div class="inner">
             <a class="logo" href="">
-                <div><img src="images/bei-logo.png" alt="BEI logo"></div>
+                <div><img src="bei-logo.png" alt="BEI logo"></div>
                 <p id="logo-text">UW Brain Exercise Initiative</p>
             </a>
             <nav>
@@ -29,12 +29,22 @@
                 <li><span><a href="">about us</a></span></li>
                 <li><span><a href="">volunteer</a></span></li>
                 <li><span><a href="">contact</a></span></li>
-                <li class="searchbar">
-                    <div id="searchlogo">
-                        <div id="circle"></div>
-                        <div id="line"></div>
+                <li>
+                    <div class="search">
+                        <div class="search-wrapper">
+                            <div id="search-logo">
+                                <div id="circle"></div>
+                                <div id="line"></div>
+                            </div>
+                            <input type="text" id="search" data-search>
+                        </div>
+                        <div class="suggestions" data-suggestions-container></div>
+                        <template data-suggestions-template>
+                            <div class="card">
+                                <div class="content" data-content></div>
+                            </div>
+                        </template>
                     </div>
-                    <div><input type="text" placeholder="search" /></div>
                 </li>
             </nav>
         </div>
@@ -46,7 +56,7 @@
         <div id="line"></div>
         <div id="result1">
             <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sit 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sit
                 porttitor sit rhoncus, proin. Elementum ipsum vestibulum fringilla</p>
         </div>
     </div>
