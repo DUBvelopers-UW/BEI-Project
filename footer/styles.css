@@ -1,89 +1,129 @@
-/* honestly a mess. positioning is terrible */
 body {
   margin: 0px;
 }
 
 footer {
-/* some of these stylings should really be in a general body ruleset */
   font-family: 'Montserrat', sans-serif;
   background-color: #2C1B4C;
   color: #FFFFFF;
+  font-weight: 500;
 
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 511px;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 400px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 68px;
+
+  /* justify-content: space-between
+  padding-left: 80px;
+  padding-right: 80px; */
 }
 
-footer p {
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 3px;
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin: 0px;
+  margin-bottom: 23px;
 }
 
 footer > p {
   position: absolute;
-  align-self: center;
-  bottom: 5px;
+  width: 658px;
+  height: 29px;
+  font-size: 18px;
+  line-height: 161%;
+  text-align: right;
+  letter-spacing: 0.03em;
+  bottom: 0px;
 }
 
 a {
   color: #FFFFFF;
-  font-size: 12pt;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-/* incomplete just for current visability */
-button {
+#col1 a {
+  display: block;
+  padding-bottom: 9px;
+}
 
+/* This was not specified in the figma, what should be done in this case */
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: lavenderblush;
+}
+
+button {
+  font-size: 12pt;
+  line-height: 17px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  font-family: 'Montserrat', sans-serif;
+
+  background-color: unset;
+
+  border: white solid .5pt;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px;
+  width: 135px;
+  height: 39px;
+}
+
+
+#connect section {
+  width: 211px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #about {
-  position: absolute;
-  width: 100px;
-  height: 110px;
-/* wrong lol */
-  bottom: 322px;
-  left: 80px;
-}
+  margin-bottom: 20px;
 
-#volunteer {
-  position: absolute;
-  width: 171px;
-  height: 71px;
-  left: 80px;
-  /* wrong lol */
-  bottom: 175px;
 }
 
 #questions {
-  position: absolute;
-  width: 183px;
-  height: 86px;
-  left: 400px;
-  bottom: 322px;
+  margin-bottom: 58.5px;
 }
 
-#connect {
-  position: absolute;
-  width: 253px;
-  height: 97px;
-  bottom: 175px;
-  left: 400px;
-}
 
 #connect img {
   width: 48px;
 }
 
-#description > p{
-  position: absolute;
-  width: 457px;
-  height: 145px;
-  bottom: 175px;
-  left: 700px;
+#col3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-#description img {
+#col3 p {
+  width: 457px;
+  height: 145px;
+  text-align: end;
+  font-size: 18px;
+}
+
+#col3 img {
   width: 129px;
   height: 158px;
 }

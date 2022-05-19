@@ -3,7 +3,7 @@
     background-image: url("images/volunteer.png");
     background-size: cover;
     background-color: #24173F;
-    opacity: 0.8;
+    opacity: 0.8 ;
     position: absolute;
     height: 860px;
     width: 100vw;
@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #icon{
@@ -84,10 +83,10 @@ h3{
 button{
     /* Button */
     font-family: 'Montserrat', sans-serif;
-    font-style:normal;
+    font-weight: 700;
+    letter-spacing: 3%;
     font-size: 18px;
     line-height: 22px;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
@@ -109,6 +108,11 @@ button{
     
     background: #7E67AA;
     border-radius: 8px;
+    border:none;
+
+    width: 304px;
+    height: 64px;
+   
 }
 
 button:hover{
