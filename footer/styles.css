@@ -9,22 +9,18 @@ footer {
   font-weight: 500;
 
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100vw;
+  bottom: 0;
+  left: 0;
   height: 400px;
+  width:100%;
 
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   padding-top: 68px;
-
-  /* justify-content: space-between
-  padding-left: 80px;
-  padding-right: 80px; */
 }
 
-h4 {
+footer h4 {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -47,7 +43,7 @@ footer > p {
   bottom: 0px;
 }
 
-a {
+footer a {
   color: #FFFFFF;
   font-size: 12px;
   line-height: 17px;
@@ -62,12 +58,12 @@ a {
 }
 
 /* This was not specified in the figma, what should be done in this case */
-a:hover {
+footer a:hover {
   text-decoration: underline;
   text-decoration-color: lavenderblush;
 }
 
-button {
+footer button {
   font-size: 12pt;
   line-height: 17px;
   font-weight: 500;
