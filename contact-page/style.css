@@ -1,3 +1,5 @@
+/* Styling for the contact page */
+
 #top-page {
 
     background-image: url("./images/contact-us-hero.png");
@@ -89,7 +91,7 @@
 
 #contact-info center {
     position: absolute;
-    top: 570px; 
+    top: 570px;
     left: 9.2%;
 }
 
@@ -99,4 +101,8 @@
     border-radius: 8px;
     background: #4B2E83;
 
+}
+
+footer {
+    top: 2355px;
 }

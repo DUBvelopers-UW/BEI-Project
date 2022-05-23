@@ -105,17 +105,25 @@ button{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    
+
     background: #7E67AA;
     border-radius: 8px;
     border:none;
 
     width: 304px;
     height: 64px;
-   
+
 }
 
 button:hover{
     background-color: #FFFFFF;
     color:#4B2E83;
+}
+
+footer {
+    top: 2200px;
+}
+
+footer p, footer a {
+    font-weight: 300;
 }

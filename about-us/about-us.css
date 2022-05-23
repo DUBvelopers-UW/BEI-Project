@@ -89,22 +89,22 @@ h3{
     margin-top: 100px;
 }
 
-  .image1 #homeImage1 {
+.image1 #homeImage1 {
     object-fit: cover;
     height: 100%;
-  }
+}
 
-  .goal {
-      text-align:center;
-      padding: 115px 0;
-  }
+.goal {
+    text-align:center;
+    padding: 115px 0;
+}
 
-  .goal .goal-text{
+.goal .goal-text{
     margin-right:80px;
-  }
+}
 
-  
-  #info{
+
+#info{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     color: #24173F;
@@ -112,12 +112,15 @@ h3{
     margin-right: 100px;
     margin-left: 100px;
     margin-bottom: 50px;
-
 }
 
-subtitle{
+subtitle {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     color: rgb(87,87,87);
     line-height:140%;
-  }
+}
+
+footer {
+    top: 2000px;
+}

@@ -1,7 +1,9 @@
+/* Stlying for the home page */
+
 .top {
     background-image: url("images/home-hero.png");
     background-size: cover;
-   
+
     position: absolute;
     height: 860px;
     width: 100vw;
@@ -11,7 +13,7 @@
     background-blend-mode: overlay;
 
     display: flex;
-    
+
 }
 
 .top-text {
@@ -89,13 +91,13 @@ h1 {
     color: rgb(87,87,87);
     line-height:140%;
   }
-   
+
   p {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     color: #24173F;
     line-height:140%;
-  }  
+  }
 
   #button1{
     /* Button */
@@ -122,14 +124,14 @@ h1 {
     right: 0%;
     top: 0%;
     bottom: 0%;
-    
+
     background: #7E67AA;
     border-radius: 8px;
     border:none;
 
     width: 304px;
     height: 64px;
-    
+
 }
 
 #button1:hover{
@@ -194,4 +196,12 @@ flex-grow: 0;
 #button2:hover{
     background-color: #4B2E83;
     color:#FFFBF2;
+}
+
+footer {
+  top: 2360px;
+}
+
+footer p {
+  color: white;
 }

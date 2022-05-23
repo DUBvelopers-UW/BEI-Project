@@ -7,12 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../footer/styles.css">
+    <link rel="stylesheet" type="text/css" href="../header/styles.css">
+    <link rel="stylesheet" type="text/css" href="../header/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Montserrat:wght@500;700&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Montserrat:wght@500;700&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Navigation bar -->
+    <header>
+        <div class="inner">
+            <a class="logo" href="">
+                <div><img src="../header/bei-logo.png" alt="BEI logo"></div>
+                <p id="logo-text">UW Brain Exercise Initiative</p>
+            </a>
+            <nav>
+                <li><span><a href="">home</a></span></li>
+                <li><span><a href="">about us</a></span></li>
+                <li><span><a href="">volunteer</a></span></li>
+                <li><span><a href="">contact</a></span></li>
+                <li>
+                    <div class="search">
+                        <div class="search-wrapper">
+                            <div id="search-logo">
+                                <div id="circle"></div>
+                                <div id="line"></div>
+                            </div>
+                            <input type="text" id="search" placeholder="search" data-search>
+                        </div>
+                        <div class="suggestions" data-suggestions-container></div>
+                        <template data-suggestions-template>
+                            <div class="card">
+                                <div class="content" data-content></div>
+                            </div>
+                        </template>
+                    </div>
+                </li>
+            </nav>
+        </div>
+    </header>
 
     <!-- Learn More Section-->
     <div class="top">

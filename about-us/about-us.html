@@ -1,62 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
+        <title> UW BEI | About Us </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="about-us.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Montserrat:wght@500;700&family=Work+Sans&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="../footer/styles.css">
+        <link rel="stylesheet" type="text/css" href="../header/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Montserrat:wght@500;700&family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <header>
+            <div class="inner">
+                <a class="logo" href="">
+                    <div><img src="../header/bei-logo.png" alt="BEI logo"></div>
+                    <p id="logo-text">UW Brain Exercise Initiative</p>
+                </a>
+                <nav>
+                    <li><span><a href="">home</a></span></li>
+                    <li><span><a href="">about us</a></span></li>
+                    <li><span><a href="">volunteer</a></span></li>
+                    <li><span><a href="">contact</a></span></li>
+                    <li>
+                        <div class="search">
+                            <div class="search-wrapper">
+                                <div id="search-logo">
+                                    <div id="circle"></div>
+                                    <div id="line"></div>
+                                </div>
+                                <input type="text" id="search" placeholder="search" data-search>
+                            </div>
+                            <div class="suggestions" data-suggestions-container></div>
+                            <template data-suggestions-template>
+                                <div class="card">
+                                    <div class="content" data-content></div>
+                                </div>
+                            </template>
+                        </div>
+                    </li>
+                </nav>
+            </div>
+        </header>
 
-</head>
-<body>
-    <div id="top">
-        <img id="icon" src="arrow.png" alt="arrow icon">
-        <h1>About Us</h1>
-    </div>
-    <div id="bottom">
-        <div id="statement">
-            <h2 id="title"><center>Our Mission</center></h2>
-            
-            <p id="info"><center>
-                We aim to promote integenerational connections<br> between students and seniors by implementing brain<br> exercise techniques for improving the cognitive<br> function of seniors and delaying the progression of<br> Alzheimier’s Disease.
-            </center></p>
+        <div id="top">
+            <img id="icon" src="arrow.png" alt="arrow icon">
+            <h1>About Us</h1>
         </div>
+        <div id="bottom">
+            <div id="statement">
+                <h2 id="title"><center>Our Mission</center></h2>
 
-        <div class = "wrapper">
-            <div class="goal">
-                <div class="goal-text">
-                    <h2>Our Story</h2>
-                    <subtitle>Where we began</subtitle>
-                    <p>
-                        Esin Gumustekin was inspired by Dr. Ryuta<br>
-                         Kawashima’s study in Japan that suggested doing<br>
-                          simple math and reading aloud for 30 mins a day, 5x<br>
-                           a week, resulted in significant cognitive<br>
-                            improvements for those with Alzheimer’s.
-                    <p>
+                <p id="info"><center>
+                    We aim to promote integenerational connections<br> between students and seniors by implementing brain<br> exercise techniques for improving the cognitive<br> function of seniors and delaying the progression of<br> Alzheimier’s Disease.
+                </center></p>
+            </div>
+
+            <div class = "wrapper">
+                <div class="goal">
+                    <div class="goal-text">
+                        <h2>Our Story</h2>
+                        <subtitle>Where we began</subtitle>
                         <p>
-                        These activities stimulated the prefrontal cortex,<br>
-                         where memory, cognition, and planning are<br>
-                          controlled; participants who completed the exercises<br>
-                           saw and felt improbemnts in communication,<br>
-                            cognition, and mood.
-                        
-                        <br>
-                        Read Esin’s Full Story Here                    </p>
+                            Esin Gumustekin was inspired by Dr. Ryuta<br>
+                             Kawashima’s study in Japan that suggested doing<br>
+                              simple math and reading aloud for 30 mins a day, 5x<br>
+                               a week, resulted in significant cognitive<br>
+                                improvements for those with Alzheimer’s.
+                        <p>
+                            <p>
+                            These activities stimulated the prefrontal cortex,<br>
+                             where memory, cognition, and planning are<br>
+                              controlled; participants who completed the exercises<br>
+                               saw and felt improbemnts in communication,<br>
+                                cognition, and mood.
+
+                            <br>
+                            Read Esin’s Full Story Here                    </p>
+                    </div>
+                </div>
+
+                <div class="image1">
+                    <img id = "tableImg" src="table.png" alt="" />
                 </div>
             </div>
-
-            <div class="image1"> 
-                <img id = "tableImg" src="table.png" alt="" />
-            </div>
         </div>
-    </div>
 
+        <footer>
+            <section id="col1">
+                <section id="about">
+                    <h4> About </h4>
+                    <!-- hrefs should be links to these html pages -->
+                    <a href=""> Our Mission </a>
+                    <a href=""> Our Team </a>
+                    <a href=""> Our Story </a>
+                </section>
 
+                <section id="volunteer">
+                    <!-- href should be links to this html pages -->
+                    <h4> Volunteer </h4>
+                    <a href=""> New Volunteers </a>
+                </section>
+            </section>
 
+            <section id="col2">
+                <section id="questions">
+                    <!-- href should be linked to? -->
+                    <h4> Questions? </h4>
+                    <button id="q_button"> <a href="">Ask us here</a> </button>
+                </section>
 
-    
-</body>
+                <section id="connect">
+                    <!-- hrefs should be links to these account pages/email -->
+                    <h4>Connect with us</h4>
+                    <section>
+                        <a href="https://www.facebook.com/UWBrainExerciseInitiative/">
+                            <img src="../footer/img/Facebook.png" alt="Facebook logo">
+                        </a>
+                        <a href="https://www.instagram.com/uw_bei/?hl=en">
+                            <img src="../footer/img/Instagram.png" alt="Instagram logo">
+                        </a>
+                        <a href="mailto:fakeEmail@email.com">
+                            <img src="../footer/img/Mail.png" alt="Envelope icon">
+                        </a>
+                    </section>
+                    <!-- these make little weight _s between icons so maybe this isn't the way to go -->
+                </section>
+            </section>
+
+            <section id="col3">
+                <img src="../footer/img/bei-logo.png" alt="Brain Exercise Initiative logo">
+                <p>
+                  We are a student-run 501(c)(3) nonprofit organization that uses simple math, writing and
+                  reading aloud exercises as an intervention to improve cognitive function in those with
+                  Alzheimer's Disease.
+                </p>
+            </section>
+            <p> Copyright © 2022 by UW Brain Exercise Initiative & UW DUBvelopers </p>
+        </footer>
+    </body>
 </html>
