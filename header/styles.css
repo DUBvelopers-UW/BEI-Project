@@ -1,3 +1,5 @@
+/* Styling for the header */
+
 * {
     margin: 0;
     padding: 0;
@@ -175,11 +177,6 @@ header .card {
     margin-left: 27px;
 }
 
-header .card:hover {
-    /* Remove */
-    background-color: red;
-}
-
 header .show {
     display: block;
 }
@@ -216,8 +213,6 @@ header nav a:hover::after {
     background-color: #B3A27E;
     border-radius: 8px;
 }
-
-
 
 body {
     position: relative;
@@ -285,19 +280,4 @@ body {
     align-items: center;
 
     color: #2C1B4C;
-}
-
-/* Testing */
-footer {
-    height: 511px;
-    width: 100vw;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: red;
-}
-
-body {
-    min-height: 150vh;
-    /* Testing purposes */
 }
