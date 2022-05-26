@@ -101,11 +101,20 @@ header .search {
 
     margin-top: 11px;
     margin-left: 35px;
+
+    box-sizing: border-box;
 }
 
-header .search:focus {
-    border: 1.5px solid #009688;
-    background-color: white;
+header .search:focus-within {
+    background: #FFFFFF;
+    border: 2px solid #4B2E83;
+
+    box-shadow: 0px 4px 4px #4B2E83;
+    border-radius: 4px;
+}
+
+header input:focus {
+    background: #FFFFFF;
 }
 
 header .search-wrapper {
@@ -133,11 +142,23 @@ header input {
     outline: none;
     position: relative;
     width: 100%;
+    caret-color: #24173f;
+}
+
+header #line-search {
+    position: relative;
+    width: 200px;
+    height: 0px;
+    left: 30px;
+    top: -10px;
+
+    /* Royal Purple */
+    border: 0.5px solid #4B2E83;
 }
 
 header .suggestions {
     gap: .25rem;
-    margin-top: 1rem;
+    margin-top: 28px;
     display: none;
 }
 
@@ -154,9 +175,10 @@ header .card {
     margin-left: 27px;
 }
 
-/* header .card:hover {  Remove
+header .card:hover {
+    /* Remove */
     background-color: red;
-} */
+}
 
 header .show {
     display: block;
@@ -194,6 +216,8 @@ header nav a:hover::after {
     background-color: #B3A27E;
     border-radius: 8px;
 }
+
+
 
 body {
     position: relative;
@@ -261,6 +285,16 @@ body {
     align-items: center;
 
     color: #2C1B4C;
+}
+
+/* Testing */
+footer {
+    height: 511px;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: red;
 }
 
 body {

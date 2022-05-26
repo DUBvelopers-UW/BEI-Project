@@ -11,13 +11,16 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js" defer></script>
+
+    <!-- Lunr.js -->
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
 </head>
 
 <body>
     <!-- Navigation bar -->
     <header>
         <div class="inner">
-            <a class="logo" href="">
+            <a class="logo" href=""> <!-- ADD HREF TO HOME PAGE -->
                 <div><img src="bei-logo.png" alt="BEI logo"></div>
                 <p id="logo-text">UW Brain Exercise Initiative</p>
             </a>
@@ -35,7 +38,9 @@
                             </div>
                             <input type="text" id="search" placeholder="search" data-search>
                         </div>
-                        <div class="suggestions" data-suggestions-container></div>
+                        <div class="suggestions" data-suggestions-container>
+                            <div id="line-search"></div>
+                        </div>
                         <template data-suggestions-template>
                             <div class="card">
                                 <div class="content" data-content></div>
