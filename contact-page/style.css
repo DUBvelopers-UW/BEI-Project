@@ -96,8 +96,9 @@
 }
 
 #message-box {
-    height: 795px;
-    width: 45%;
+    height: 595px;
+
+    width: 566px;
     border-radius: 8px;
     background: #4B2E83;
 
