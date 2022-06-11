@@ -2,72 +2,54 @@ const suggestionsTemplate = document.querySelector("[data-suggestions-template]"
 const suggestionsContainer = document.querySelector("[data-suggestions-container]");
 const searchInput = document.querySelector("[data-search]");
 
+// Array of suggestion cards
+let suggestionCards = [];
 
+// Array of suggestions for suggestions box
+let suggestions = [
+    "Home",
+    "About Us",
+    "Volunteer",
+    "Contact",
+    "Test"
+];
 
-
-
-
-
-let users = []; // Array of users
-
-searchInput.addEventListener("input", (e) => {
-    const value = e.target.value.toLowerCase() // What is being typed
-    users.forEach(user => {
-        const isVisible = user.name.toLowerCase().includes(value); // Checks if user.name has the search in it
-        user.element.classList.toggle("show", isVisible);
-
-        user.element.classList.onclick(function(){
-            alert("test");
-        });
-
-        if (value.length > 0) {
-            suggestionsContainer.style.display = "block";
-        } else {
-            suggestionsContainer.style.display = "none";
-        }
-    })
-});
-
-// Gets users from API and stores each one in users array
-fetch("https://jsonplaceholder.typicode.com/users")
-
-    .then(res => res.json())
-    .then(data => {
-        users = data.map(user => {
-            const card = suggestionsTemplate.content.cloneNode(true).children[0];
-            const content = card.querySelector("[data-content]");
-            content.textContent = user.name; // Displays user.name for card
-            suggestionsContainer.append(card);
-            return { name: user.name, element: card }
-        })
-    })
-
-
-
-
-/* Lunr.js */
-/*
-var documents = [{
-    "name": "Lunr",
-    "text": "Like Solr, but much smaller, and not as bright.bright bright"
-}, {
-    "name": "React",
-    "text": "A JavaScript library for building user interfaces."
-}, {
-    "name": "Lodash",
-    "text": "A modern JavaScript utility library delivering modularity, performance & extras."
-}]
-
-var idx = lunr(function () {
-    this.ref('name')
-    this.field('text')
-
-    documents.forEach(function (doc) {
-        this.add(doc)
-    }, this)
+// Converts suggestions to suggestion cards
+suggestionCards = suggestions.map(suggestion => {
+    const card = suggestionsTemplate.content.cloneNode(true).children[0];
+    card.addEventListener('click', clickHandler);
+    const content = card.querySelector("[data-content]");
+    content.textContent = suggestion;
+    suggestionsContainer.append(card);
+    return { name: suggestion, element: card }
 })
 
-let results = idx.search("bright")
-console.log('Results: ', results.length);
+// When user clicks search bar, displays suggestions that match.
+searchInput.addEventListener('input', (e) => {
+    const value = e.target.value.toLowerCase();
+    let foundMatch = false;
+    suggestionCards.forEach(item => {
+        const isVisible = item.name.toLowerCase().includes(value);
+        item.element.classList.toggle("show", isVisible);
+        if (value.length > 0 && isVisible) { 
+            foundMatch = true;
+        } else if (value.length == 0) {
+            foundMatch = false;
+        }
+    })
+    suggestionsContainer.classList.toggle("show", foundMatch);
+});
 
-console.log('Sanity') */
+// Search bar returns to unfocused state when user clicks out of input
+searchInput.addEventListener('focusout', function () {
+    setTimeout(function () {
+        suggestionsContainer.classList.toggle("show", false);
+    }, 100)
+})
+
+// Auto fills the text in the search bar with the selected search from the suggestions
+function clickHandler(event) {
+    const value = event.target.textContent;
+    searchInput.value = value;
+    suggestionsContainer.classList.toggle("show", false);
+}
