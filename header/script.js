@@ -14,16 +14,6 @@ let suggestions = [
     "Test"
 ];
 
-// Converts suggestions to suggestion cards
-suggestionCards = suggestions.map(suggestion => {
-    const card = suggestionsTemplate.content.cloneNode(true).children[0];
-    card.addEventListener('click', clickHandler);
-    const content = card.querySelector("[data-content]");
-    content.textContent = suggestion;
-    suggestionsContainer.append(card);
-    return { name: suggestion, element: card }
-})
-
 // When user clicks search bar, displays suggestions that match.
 searchInput.addEventListener('input', (e) => {
     const value = e.target.value.toLowerCase();
@@ -31,7 +21,7 @@ searchInput.addEventListener('input', (e) => {
     suggestionCards.forEach(item => {
         const isVisible = item.name.toLowerCase().includes(value);
         item.element.classList.toggle("show", isVisible);
-        if (value.length > 0 && isVisible) { 
+        if (value.length > 0 && isVisible) {
             foundMatch = true;
         } else if (value.length == 0) {
             foundMatch = false;
@@ -45,6 +35,16 @@ searchInput.addEventListener('focusout', function () {
     setTimeout(function () {
         suggestionsContainer.classList.toggle("show", false);
     }, 100)
+})
+
+// Converts suggestions to suggestion cards
+suggestionCards = suggestions.map(suggestion => {
+    const card = suggestionsTemplate.content.cloneNode(true).children[0];
+    card.addEventListener('click', clickHandler);
+    const content = card.querySelector("[data-content]");
+    content.textContent = suggestion;
+    suggestionsContainer.append(card);
+    return { name: suggestion, element: card }
 })
 
 // Auto fills the text in the search bar with the selected search from the suggestions

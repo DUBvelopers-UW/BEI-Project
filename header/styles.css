@@ -5,6 +5,9 @@
     text-decoration: none;
 }
 
+
+/* Header */
+
 header {
     box-shadow: 0px 2px 4px rgba(75, 46, 131, 0.5);
     height: 81px;
@@ -92,16 +95,14 @@ header nav a:hover {
 }
 
 /* Search bar */
-header .search {
-    width: 300px;
 
+header .search {
+    width: 330px;
     background: #e5dfeb;
     padding: 1rem;
     border-radius: 0.3rem;
-
     margin-top: 11px;
     margin-left: 35px;
-
     box-sizing: border-box;
 }
 
@@ -199,6 +200,12 @@ header .search-wrapper #line {
     width: 4px;
 }
 
+header #search-logo {
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
 header nav a:hover::after {
     content: "";
 
@@ -210,91 +217,4 @@ header nav a:hover::after {
 
     background-color: #B3A27E;
     border-radius: 8px;
-}
-
-
-
-
-
-body {
-    position: relative;
-    background-color: #fcfaff;
-}
-
-#results #search {
-    position: absolute;
-    left: 143px;
-    top: 166px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-
-    color: #2C1B4C;
-}
-
-#results #line {
-    position: absolute;
-    width: 1202px;
-    height: 0px;
-    left: 143px;
-    top: 245px;
-
-    border: 0.5px solid #4B2E83;
-}
-
-/* Results page */
-#results h3 {
-    position: absolute;
-    width: 337.49px;
-    height: 28px;
-    left: 143px;
-    top: 323px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 41px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-
-    color: #4B2E83;
-}
-
-#results p {
-    position: absolute;
-    width: 1225px;
-    height: 56px;
-    left: 143px;
-    top: 377px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 180%;
-    display: flex;
-    align-items: center;
-
-    color: #2C1B4C;
-}
-
-/* Testing */
-footer {
-    height: 511px;
-    width: 100vw;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: red;
-}
-
-body {
-    min-height: 150vh;
-    /* Testing purposes */
 }

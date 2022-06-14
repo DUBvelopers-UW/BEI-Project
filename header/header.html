@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Header -->
+    <link rel="stylesheet" type="text/css" href="../header/styles.css">
+    <script src="../header/script.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <a class="logo" href="../home/BEIHome.html">
+                <div><img src="../header/bei-logo.png" alt="BEI logo"></div>
+                <p id="logo-text">UW Brain Exercise Initiative</p>
+            </a>
+            <nav>
+                <li><span><a href="../home/BEIHome.html">home</a></span></li>
+                <li><span><a href="../about-us/about-us.html">about us</a></span></li>
+                <li><span><a href="../volunteer-page/volunteerPage.html">volunteer</a></span></li>
+                <li><span><a href="../contact-page/contact.html">contact</a></span></li>
+                <li>
+                    <div class="search">
+                        <form action="../results-page/results.html" method="GET" class="search-wrapper">
+                            <button type="submit" id="search-logo">
+                                <div id="circle"></div>
+                                <div id="line"></div>
+                            </button>
+                            <input type="text" id="search" name="search" placeholder="search" data-search>
+                        </form>
+                        <div class="suggestions" data-suggestions-container>
+                            <div id="line-search"></div>
+                        </div>
+                        <template data-suggestions-template>
+                            <div class="card">
+                                <div class="content" data-content></div>
+                            </div>
+                        </template>
+                    </div>
+                </li>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>
