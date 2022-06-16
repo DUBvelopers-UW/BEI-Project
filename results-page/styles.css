@@ -1,11 +1,10 @@
 /* Search results page */
 
 body {
-    position: relative;
     background-color: #fcfaff;
 }
 
-#results #search {
+#results #searchStatement {
     position: absolute;
     left: 143px;
     top: 166px;
@@ -30,13 +29,19 @@ body {
     border: 0.5px solid #4B2E83;
 }
 
+.results-container {
+    padding-top: 245px;
+}
+
+#results .result-card {
+    margin-top: 50px;
+    margin-left: 145px;
+}
+
 /* Results page */
 #results h3 {
-    position: absolute;
     width: 337.49px;
     height: 28px;
-    left: 143px;
-    top: 323px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -50,30 +55,23 @@ body {
     color: #4B2E83;
 }
 
-#results p {
-    position: absolute;
+#results .result-content {
+    margin: 10px 0;
     width: 1225px;
-    height: 56px;
-    left: 143px;
-    top: 377px;
+    height: auto;
+
+    line-height: 45px;
 
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 180%;
     display: flex;
     align-items: center;
 
     color: #2C1B4C;
 }
 
-/* Testing */
 footer {
-    bottom: 0;
-}
-
-body {
-    min-height: 150vh;
-    /* Testing purposes */
+    margin-top: 170px;
 }

@@ -16,7 +16,7 @@
     <!-- Results Page -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js" defer></script>
-    
+
     <!-- Footer -->
     <link rel="stylesheet" href="../footer/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700" rel="stylesheet">
@@ -60,19 +60,16 @@
 
     <!-- Search results page -->
     <div id="results">
-        <h2 id="search">Showing search results for "typing search..."</h2>
+        <h2 id="searchStatement">Showing search results for "typing search..."</h2>
         <div id="line"></div>
-        <div id="result1">
-            <!-- REMOVE -->
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sit
-                porttitor sit rhoncus, proin. Elementum ipsum vestibulum fringilla</p>
+        <div class="results-container" results-container>
         </div>
         <template result-template>
             <div class="result-card">
                 <!-- Make anchor and ref to something -->
-                <h3 class="page-title">About Us</h3>
-                <div class="result-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sit
+                <h3 class="page-title" result-header>About Us</h3>
+                <div class="result-content" result-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+                    sit
                     porttitor sit rhoncus, proin. Elementum ipsum vestibulum fringilla</div>
             </div>
         </template>
@@ -130,7 +127,7 @@
             </p>
         </section>
         <p> Copyright © 2022 by UW Brain Exercise Initiative & UW DUBvelopers </p>
-    </footer>
+    </footer> 
 </body>
 
 </html>
