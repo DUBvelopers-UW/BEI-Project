@@ -203,7 +203,7 @@ header .search-wrapper #line {
 header #search-logo {
     background: transparent;
     border: none !important;
-    font-size:0;
+    font-size: 0;
 }
 
 header nav a:hover::after {

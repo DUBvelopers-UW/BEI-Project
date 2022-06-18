@@ -20,7 +20,7 @@
     <!-- Navigation bar -->
     <header>
         <div class="inner">
-            <a class="logo" href="">
+            <a class="logo" href="../home/BEIHome.html">
                 <div><img src="../header/bei-logo.png" alt="BEI logo"></div>
                 <p id="logo-text">UW Brain Exercise Initiative</p>
             </a>
@@ -31,14 +31,16 @@
                 <li><span><a href="../contact-page/contact.html">contact</a></span></li>
                 <li>
                     <div class="search">
-                        <div class="search-wrapper">
-                            <div id="search-logo">
+                        <form action="../results-page/results.html" method="GET" class="search-wrapper">
+                            <button type="submit" id="search-logo">
                                 <div id="circle"></div>
                                 <div id="line"></div>
-                            </div>
-                            <input type="text" id="search" placeholder="search" data-search>
+                            </button>
+                            <input type="text" id="search" name="search" placeholder="search" data-search>
+                        </form>
+                        <div class="suggestions" data-suggestions-container>
+                            <div id="line-search"></div>
                         </div>
-                        <div class="suggestions" data-suggestions-container></div>
                         <template data-suggestions-template>
                             <div class="card">
                                 <div class="content" data-content></div>

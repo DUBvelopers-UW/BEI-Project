@@ -1,0 +1,7 @@
+IMPLEMENTATIONS:
+
+BUGS:
+Additional spaces are sometimes created when clicking suggestion (Ex. clicking'e' in "Leanne") -> getElementById?
+Search bar is different colors when user clicks on input and clicks out of window
+Fix footer
+Make page conetent that is searched dynamic?
