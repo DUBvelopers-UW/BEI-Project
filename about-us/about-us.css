@@ -4,6 +4,7 @@
     background-size: cover;
     background-color: #24173f;
     opacity: 0.8;
+
     height: 928px;
 
     top: 81px;
@@ -252,12 +253,18 @@ h2 {
     text-align: left;
 }
 
+.our-story-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 1065px;
+    background: #fcfaff;
+}
+
 .our-story {
     position: relative;
-    width: 50vw;
+    width: 52vw;
     height: 1065px;
-    left: 0px;
-    top: 0px;
+    float: left;
     text-align: center;
     align-items: center;
     background: #fcfaff;
@@ -266,4 +273,70 @@ h2 {
 .our-story h2 {
     color: #24173f;
     padding-top: 160px;
+}
+
+.our-story h3 {
+    position: relative;
+    padding-top: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 140%;
+
+    color: #575757;
+}
+
+.our-story p {
+    position: relative;
+    padding: 50px 50px 50px 80px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 180%;
+    text-align: left;
+
+    color: #2C1B4C;
+}
+
+.our-story a {
+    position: relative;
+    top: 25px;
+    right: 140px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #2C1B4C;
+}
+
+.our-story-wrapper #tableImg {
+    position: absolute;
+    float: right;
+
+    object-fit: cover;
+
+    width: 48vw;
+    height: 1065px;
+}
+
+.our-story-wrapper #overlay {
+    position: absolute;
+    float: right;
+    width: 48vw;
+    height: 100%;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background-color: #4B2E83;
 }
