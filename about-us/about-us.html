@@ -1,148 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title> UW BEI | About Us </title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="about-us.css">
-        <link rel="stylesheet" href="../footer/styles.css">
-        <link rel="stylesheet" type="text/css" href="../header/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Montserrat:wght@500;700&family=Work+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Navigation bar -->
-        <header>
-            <div class="inner">
-                <a class="logo" href="../home/BEIHome.html">
-                    <div><img src="../header/bei-logo.png" alt="BEI logo"></div>
-                    <p id="logo-text">UW Brain Exercise Initiative</p>
-                </a>
-                <nav>
-                    <li><span><a href="../home/BEIHome.html">home</a></span></li>
-                    <li><span><a href="../about-us/about-us.html">about us</a></span></li>
-                    <li><span><a href="../volunteer-page/volunteerPage.html">volunteer</a></span></li>
-                    <li><span><a href="../contact-page/contact.html">contact</a></span></li>
-                    <li>
-                        <div class="search">
-                            <form action="../results-page/results.html" method="GET" class="search-wrapper">
-                                <button type="submit" id="search-logo">
-                                    <div id="circle"></div>
-                                    <div id="line"></div>
-                                </button>
-                                <input type="text" id="search" name="search" placeholder="search" data-search>
-                            </form>
-                            <div class="suggestions" data-suggestions-container>
-                                <div id="line-search"></div>
-                            </div>
-                            <template data-suggestions-template>
-                                <div class="card">
-                                    <div class="content" data-content></div>
-                                </div>
-                            </template>
+
+<head>
+    <meta charset="UTF-8">
+    <title> UW BEI | About Us </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="../footer/styles.css">
+    <link rel="stylesheet" type="text/css" href="../header/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Montserrat:wght@500;700&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+
+    <header>
+        <div class="inner">
+            <a class="logo" href="../home/BEIHome.html">
+                <div><img src="../header/bei-logo.png" alt="BEI logo"></div>
+                <p id="logo-text">UW Brain Exercise Initiative</p>
+            </a>
+            <nav>
+                <li><span><a href="../home/BEIHome.html">home</a></span></li>
+                <li><span><a href="../about-us/about-us.html">about us</a></span></li>
+                <li><span><a href="../volunteer-page/volunteerPage.html">volunteer</a></span></li>
+                <li><span><a href="../contact-page/contact.html">contact</a></span></li>
+                <li>
+                    <div class="search">
+                        <form action="../results-page/results.html" method="GET" class="search-wrapper">
+                            <button type="submit" id="search-logo">
+                                <div id="circle"></div>
+                                <div id="line"></div>
+                            </button>
+                            <input type="text" id="search" name="search" placeholder="search" data-search>
+                        </form>
+                        <div class="suggestions" data-suggestions-container>
+                            <div id="line-search"></div>
                         </div>
-                    </li>
-                </nav>
-            </div>
-        </header>
-
-        <div id="top">
-            <img id="icon" src="arrow.png" alt="arrow icon">
-            <h1>About Us</h1>
-        </div>
-        <div id="bottom">
-            <div id="statement">
-                <h2 id="title"><center>Our Mission</center></h2>
-
-                <p id="info"><center>
-                    We aim to promote integenerational connections<br> between students and seniors by implementing brain<br> exercise techniques for improving the cognitive<br> function of seniors and delaying the progression of<br> Alzheimier’s Disease.
-                </center></p>
-            </div>
-
-            <div class = "wrapper">
-                <div class="goal">
-                    <div class="goal-text">
-                        <h2>Our Story</h2>
-                        <subtitle>Where we began</subtitle>
-                        <p>
-                            Esin Gumustekin was inspired by Dr. Ryuta<br>
-                             Kawashima’s study in Japan that suggested doing<br>
-                              simple math and reading aloud for 30 mins a day, 5x<br>
-                               a week, resulted in significant cognitive<br>
-                                improvements for those with Alzheimer’s.
-                        <p>
-                            <p>
-                            These activities stimulated the prefrontal cortex,<br>
-                             where memory, cognition, and planning are<br>
-                              controlled; participants who completed the exercises<br>
-                               saw and felt improbemnts in communication,<br>
-                                cognition, and mood.
-
-                            <br>
-                            Read Esin’s Full Story Here                    </p>
+                        <template data-suggestions-template>
+                            <div class="card">
+                                <div class="content" data-content></div>
+                            </div>
+                        </template>
                     </div>
-                </div>
+                </li>
+            </nav>
+        </div>
+    </header>
 
-                <div class="image1">
-                    <img id = "tableImg" src="table.png" alt="" />
-                </div>
-            </div>
+    <!-- About Us Page -->
+
+    <div id="top">
+        <h1>About Us</h1>
+        <img id="icon" src="images/arrow.png" alt="arrow icon">
+    </div>
+
+    <div class="our-mission">
+        <h2>Our Mission</h2>
+        <p>We aim to promote integenerational connections between students and seniors by implementing brain exercise
+            techniques for improving the cognitive function of seniors and delaying the progression of Alzheimier’s
+            Disease.</p>
+    </div>
+
+    <div class="our-team">
+        <h2>Our Team</h2>
+
+        <img id="mem1" class="memImg" src="images/mem1.png">
+        <div id="mem1info" class="info">
+            <h3>INGRID REDFORD</h3>
+            <h4>Co-President</h4>
+            <p>Hello, my name is Ingrid and I am a junior majoring in Neuroscience, with a minor in Bioethics. From a
+                young age, I have been fascinated with how our individual experiences, stories, and memories define who
+                we are and the world around us. This fueled my passion for neuroscience with a particular interest in
+                neurodegenerative diseases and how preventive matters can preserve our source of identity, keeping our
+                defining experiences with us for a lifetime. I am thrilled to continue to pursue this interest through
+                Brain Exercise Initiative! Outside of BEI, I volunteer in the Neurological and CardiovascularInstitute
+                at Swedish Hospital, am part of the Presidential Scholar Program, and enjoy various activities such as
+                swimming!</p>
         </div>
 
-        <footer>
-            <section id="col1">
-                <section id="about">
-                    <h4> About </h4>
-                    <!-- hrefs should be links to these html pages -->
-                    <a href=""> Our Mission </a>
-                    <a href=""> Our Team </a>
-                    <a href=""> Our Story </a>
-                </section>
+        <img id="v12" src="images/Vector 12.png">
+        <img id="v11" src="images/Vector 11.png">
 
-                <section id="volunteer">
-                    <!-- href should be links to this html pages -->
-                    <h4> Volunteer </h4>
-                    <a href=""> New Volunteers </a>
-                </section>
+        <img id="mem2" class="memImg" src="images/mem2.png">
+        <div id="mem2info" class="info">
+            <h3>LINA PARK</h3>
+            <h4>Co-President</h4>
+            <p>Hi there! I'm Lina, and I'm currently a senior pursuing a major in Neuroscience and minoring in American
+                Sign Language. Along with researching at the Young Lab and volunteering at Seattle Children’s Hospital,
+                I enjoy reading, baking, and doing ballet. Having personally witnessed the impact of Alzheimer’s disease
+                on my grandmother, I was inspired to get involved with BEI. As one of the Co-Presidents, I hope to
+                compassionately serve those in the Seattle community who are suffering from memory loss.</p>
+        </div>
+
+        <img id="v16" src="images/Vector 16.png">
+        <img id="v15" src="images/Vector 15.png">
+
+        <img id="mem3" class="memImg" src="images/mem3.png">
+        <div id="mem3info" class="info">
+            <h3>RACHEL WANG</h3>
+            <h4>Vice President</h4>
+            <p>Hi everyone! My name is Rachel and I'm a senior majoring in Biology (Physiology) and minoring in
+                Informatics. I've always been passionate about understanding how our brain functions, specifically how
+                learning and memory are processed neurologically and learning about BEI's simple exercises and steady
+                results was extremely fascinating to me. Outside of BEI, I'm a research assistant at the Zweifel Lab,
+                where we focus on dopamine-related neural circuitry. In my free time, I enjoy playing classical Chinese
+                instruments (the guzheng and the hu lu si), playing badminton, and trying out new baking recipes. </p>
+        </div>
+
+        <img id="v14" src="images/Vector 14.png">
+        <img id="v13" src="images/Vector 13.png">
+
+        <img id="mem4" class="memImg" src="images/mem4.png">
+        <div id="mem4info" class="info">
+            <h3>JULES LE</h3>
+            <h4>Director of Media</h4>
+            <p>Hello everyone! My name is Jules and I am currently a senior studying General Biology. As someone that
+                has always enjoyed learning about medical conditions and having meaningful interactions with others, BEI
+                has provided me with an opportunity to make a real difference in the world. When I am not volunteering
+                or studying, I enjoy learning new languages, making DIY art projects, and listening to music. I look
+                forward to my time at BEI and am excited to continue contributing, alongside our volunteers, towards our
+                program's goal of combating Alzheimer's!</p>
+        </div>
+
+        <img id="v18" src="images/Vector 18.png">
+        <img id="v17" src="images/Vector 17.png">
+
+        <img id="mem5" class="memImg" src="images/mem5.png">
+        <div id="mem5info" class="info">
+            <h3>SAIYARA ALAM</h3>
+            <h4>Director of Outreach</h4>
+            <p>Hey! My name is Saiyara Alam and I am a senior majoring in Biology (Cellular, Molecular, Developmental).
+                I currently work with Dr. Sheehan to improve the teaching methods of TCD, as well as the Schindler Lab,
+                alongside volunteering in local events whenever possible. In my free time, I love to read, dance, and
+                try new foods! I am fascinated by the brain and how large of an impact it can make on our bodies and our
+                lives, specifically the effects of Alzheimer's disease. So, when I heard about BEI and the exercises
+                they offer, I had to be a part of it. As the Director of Outreach, I hope to spread the word to those in
+                the Seattle community who are currently undergoing the effects of Alzheimer's. </p>
+        </div>
+    </div>
+
+    <div class="our-story">
+        <h2>Our Story</h2>
+
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <section id="col1">
+            <section id="about">
+                <h4> About </h4>
+                <!-- hrefs should be links to these html pages -->
+                <a href=""> Our Mission </a>
+                <a href=""> Our Team </a>
+                <a href=""> Our Story </a>
             </section>
 
-            <section id="col2">
-                <section id="questions">
-                    <!-- href should be linked to? -->
-                    <h4> Questions? </h4>
-                    <button id="q_button"> <a href="">Ask us here</a> </button>
-                </section>
+            <section id="volunteer">
+                <!-- href should be links to this html pages -->
+                <h4> Volunteer </h4>
+                <a href=""> New Volunteers </a>
+            </section>
+        </section>
 
-                <section id="connect">
-                    <!-- hrefs should be links to these account pages/email -->
-                    <h4>Connect with us</h4>
-                    <section>
-                        <a href="https://www.facebook.com/UWBrainExerciseInitiative/">
-                            <img src="../footer/img/Facebook.png" alt="Facebook logo">
-                        </a>
-                        <a href="https://www.instagram.com/uw_bei/?hl=en">
-                            <img src="../footer/img/Instagram.png" alt="Instagram logo">
-                        </a>
-                        <a href="mailto:fakeEmail@email.com">
-                            <img src="../footer/img/Mail.png" alt="Envelope icon">
-                        </a>
-                    </section>
-                    <!-- these make little weight _s between icons so maybe this isn't the way to go -->
-                </section>
+        <section id="col2">
+            <section id="questions">
+                <!-- href should be linked to? -->
+                <h4> Questions? </h4>
+                <button id="q_button"> <a href="">Ask us here</a> </button>
             </section>
 
-            <section id="col3">
-                <img src="../footer/img/bei-logo.png" alt="Brain Exercise Initiative logo">
-                <p>
-                  We are a student-run 501(c)(3) nonprofit organization that uses simple math, writing and
-                  reading aloud exercises as an intervention to improve cognitive function in those with
-                  Alzheimer's Disease.
-                </p>
+            <section id="connect">
+                <!-- hrefs should be links to these account pages/email -->
+                <h4>Connect with us</h4>
+                <section>
+                    <a href="https://www.facebook.com/UWBrainExerciseInitiative/">
+                        <img src="../footer/img/Facebook.png" alt="Facebook logo">
+                    </a>
+                    <a href="https://www.instagram.com/uw_bei/?hl=en">
+                        <img src="../footer/img/Instagram.png" alt="Instagram logo">
+                    </a>
+                    <a href="mailto:fakeEmail@email.com">
+                        <img src="../footer/img/Mail.png" alt="Envelope icon">
+                    </a>
+                </section>
+                <!-- these make little weight _s between icons so maybe this isn't the way to go -->
             </section>
-            <p> Copyright © 2022 by UW Brain Exercise Initiative & UW DUBvelopers </p>
-        </footer>
-    </body>
+        </section>
+
+        <section id="col3">
+            <img src="../footer/img/bei-logo.png" alt="Brain Exercise Initiative logo">
+            <p>
+                We are a student-run 501(c)(3) nonprofit organization that uses simple math, writing and
+                reading aloud exercises as an intervention to improve cognitive function in those with
+                Alzheimer's Disease.
+            </p>
+        </section>
+        <p> Copyright © 2022 by UW Brain Exercise Initiative & UW DUBvelopers </p>
+    </footer>
+</body>
+
 </html>

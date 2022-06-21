@@ -3,7 +3,7 @@ const resultsContainer = document.querySelector("[results-container]");
 const userSearch = new URLSearchParams(window.location.search).get("search");
 const pages = new Map(); // Map of the pages and their content
 
-document.getElementById("searchStatement").innerHTML = "Showing search results for " + "\"" + userSearch + "\"";
+document.getElementById("searchStatement").innerHTML = "Showing search results for " + "\"" + userSearch.substring(0,40) + "\"";
 
 pages.set("Home../home/BEIHome.html", "Our Goal. Help Seniors Remember and Thrive. The Brain Exercise Initiative uses simple math, " +
     "writing and reading aloud exercises as an intervention to improve cognition function in those with " +
