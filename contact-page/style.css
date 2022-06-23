@@ -12,13 +12,12 @@
     top: 0px;
     border-radius: 0px;
     background-blend-mode: overlay;
-
+    padding-top: 81px;
     text-align: center;
 }
 
 #top-page h1 {
-
-    padding-top: 450px;
+    padding-top: 370px;
 
     font-family: 'El Messiri';
     font-style: normal;
@@ -31,7 +30,7 @@
 }
 
 #top-page img {
-    padding-top: 300px;
+    padding-top: 380px;
 }
 
 #in-touch {
