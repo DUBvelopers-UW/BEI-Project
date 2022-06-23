@@ -116,12 +116,6 @@
     margin-top: 250px;
 }
 
-
-
-
-
-
-
 #send-a-message {
     position: relative;
     width: auto;
@@ -137,7 +131,7 @@
     text-align: center;
 }
 
-#message-box input {
+#message-box input, textarea {
     padding-left: 16px;
 
     font-family: 'Montserrat';
