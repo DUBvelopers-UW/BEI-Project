@@ -1,12 +1,11 @@
 /* Styling for the contact page */
 
 #top-page {
-
     background-image: url("./images/contact-us-hero.png");
     background-size: cover;
     background-color: #2C1B4C;
     opacity: 0.8;
-    position: absolute;
+    position: relative;
     height: 928px;
     width: 100vw;
     left: 0px;
@@ -14,13 +13,13 @@
     border-radius: 0px;
     background-blend-mode: overlay;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    text-align: center;
 }
 
 #top-page h1 {
+
+    padding-top: 450px;
+
     font-family: 'El Messiri';
     font-style: normal;
     font-weight: 700;
@@ -31,19 +30,19 @@
     color: #FFFFFF;
 }
 
-#down {
-    position: absolute;
-    left: 48%;
-    top: 90%;
+#top-page img {
+    padding-top: 300px;
 }
 
 #in-touch {
-    position: absolute;
-    top: 1103px;
+    position: relative;
     width: 100vw;
+    height: 357px;
+    background: #fcfaff;
 }
 
 #in-touch-title {
+    padding-top: 95px;
     font-family: Montserrat;
     font-size: 48px;
     font-weight: 700;
@@ -53,11 +52,13 @@
 }
 
 #subtitle {
+    padding-top: 31px;
     font-family: Montserrat;
     font-size: 30px;
     font-weight: 500;
     line-height: 42px;
     letter-spacing: 0em;
+    color: #575757;
 }
 
 #contacting h3 {
@@ -68,42 +69,122 @@
     letter-spacing: -0.02em;
     color: #4B2E83;
 
-    height: 41px;
-
+    padding-bottom: 42px;
 }
 
 #contacting {
-    position: absolute;
-    top: 1365px;
+    position: relative;
+    height: 966px;
     width: 100vw;
-
-    display: flex;
+    background: #fcfaff;
+    padding-bottom: 80px;
 }
 
 #contact-info {
-    flex: 1;
-    display: block;
+    padding-left: 140px;
+    position: relative;
+    width: 555px;
+    float: left;
 }
 
-#contact-info > * {
-    text-align: center;
+#ats {
+    position: relative;
+    width: auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 180%;
+
+    /* Night */
+    color: #2C1B4C;
 }
 
-#contact-info center {
-    position: absolute;
-    top: 570px;
-    left: 9.2%;
+#ats img {
+    height: 48px;
+    width: 48px;
+    margin-right: 21px;
+}
+
+.box {
+    display: flex;
+    align-items:center;
+    margin-bottom: 30px;
+}
+
+#brain-man {
+    margin-top: 250px;
+}
+
+
+
+
+
+
+
+#send-a-message {
+    position: relative;
+    width: auto;
+    float: left;
 }
 
 #message-box {
-    height: 595px;
-
-    width: 566px;
+    padding-top: 11px;
+    height: 795px;
+    width: 666px;
     border-radius: 8px;
     background: #4B2E83;
-
+    text-align: center;
 }
 
-footer {
-    top: 2355px;
+#message-box input {
+    padding-left: 16px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 180%;
+
+    margin-top: 41px;
+    width: 562px;
+
+    background: #E5DFEB;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+#message-box ::placeholder {
+    color: #575757;
+}
+
+.sender-info {
+    height: 49px;
+}
+
+#your-message {
+    height: 335px;
+}
+
+#message-box button {
+    margin-top: 38px;
+
+    padding: 16px;
+    gap: 8px;
+
+    width: 240px;
+    height: 64px;
+
+    background: #FFFFFF;
+    border: 3px solid #4B2E83;
+    border-radius: 8px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }

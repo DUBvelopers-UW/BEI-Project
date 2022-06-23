@@ -1,144 +1,167 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>UW BEI | Contact Us</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="../footer/styles.css">
-        <link rel="stylesheet" type="text/css" href="../header/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700" rel="stylesheet">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-        </style>
-    </head>
 
-    <body>
-        <!-- Navigation bar -->
-        <header>
-            <div class="inner">
-                <a class="logo" href="../home/BEIHome.html">
-                    <div><img src="../header/bei-logo.png" alt="BEI logo"></div>
-                    <p id="logo-text">UW Brain Exercise Initiative</p>
-                </a>
-                <nav>
-                    <li><span><a href="../home/BEIHome.html">home</a></span></li>
-                    <li><span><a href="../about-us/about-us.html">about us</a></span></li>
-                    <li><span><a href="../volunteer-page/volunteerPage.html">volunteer</a></span></li>
-                    <li><span><a href="../contact-page/contact.html">contact</a></span></li>
-                    <li>
-                        <div class="search">
-                            <form action="../results-page/results.html" method="GET" class="search-wrapper">
-                                <button type="submit" id="search-logo">
-                                    <div id="circle"></div>
-                                    <div id="line"></div>
-                                </button>
-                                <input type="text" id="search" name="search" placeholder="search" data-search>
-                            </form>
-                            <div class="suggestions" data-suggestions-container>
-                                <div id="line-search"></div>
-                            </div>
-                            <template data-suggestions-template>
-                                <div class="card">
-                                    <div class="content" data-content></div>
-                                </div>
-                            </template>
+<head>
+    <title>UW BEI | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../footer/styles.css">
+    <link rel="stylesheet" type="text/css" href="../header/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <div class="inner">
+            <a class="logo" href="../home/BEIHome.html">
+                <div><img src="../header/bei-logo.png" alt="BEI logo"></div>
+                <p id="logo-text">UW Brain Exercise Initiative</p>
+            </a>
+            <nav>
+                <li><span><a href="../home/BEIHome.html">home</a></span></li>
+                <li><span><a href="../about-us/about-us.html">about us</a></span></li>
+                <li><span><a href="../volunteer-page/volunteerPage.html">volunteer</a></span></li>
+                <li><span><a href="../contact-page/contact.html">contact</a></span></li>
+                <li>
+                    <div class="search">
+                        <form action="../results-page/results.html" method="GET" class="search-wrapper">
+                            <button type="submit" id="search-logo">
+                                <div id="circle"></div>
+                                <div id="line"></div>
+                            </button>
+                            <input type="text" id="search" name="search" placeholder="search" data-search>
+                        </form>
+                        <div class="suggestions" data-suggestions-container>
+                            <div id="line-search"></div>
                         </div>
-                    </li>
-                </nav>
-            </div>
-        </header>
-        
-        <div id="top-page">
-            <h1 id="contact">Contact Us</h1>
-            <img src="./images/chevron-down.png" id="down">
+                        <template data-suggestions-template>
+                            <div class="card">
+                                <div class="content" data-content></div>
+                            </div>
+                        </template>
+                    </div>
+                </li>
+            </nav>
         </div>
+    </header>
 
-        <div id="in-touch">
-            <center><h2 id="in-touch-title">Let's Get in Touch</h2></center>
-            <center><p id="subtitle">Connect with us or leave us a message and we'll get back to you.</p></center>
-        </div>
+    <!-- Contact Page -->
 
-        <div id="contacting">
-            <div id="contact-info">
-                <h3>Contact Info</h3>
-                <div id="ats">
-                    <!-- images not styled yet, these should probably be links not just p -->
-                    <img id="" src="./images/mail.png" id="down">
-                    <p>bei@uw.edu</p>
-                    <img src="./images/instagram.png" id="down">
-                    <p>@uw_bei</p>
-                    <img src="./images/facebook.png" id="down">
-                    <p>@UWBrainExerciseInitiative</p>
+    <div id="top-page">
+        <h1 id="contact">Contact Us</h1>
+        <img src="./images/chevron-down.png">
+    </div>
+
+    <div id="in-touch">
+        <center>
+            <h2 id="in-touch-title">Let's Get in Touch</h2>
+        </center>
+        <center>
+            <p id="subtitle">Connect with us or leave us a message and we'll get back to you.</p>
+        </center>
+    </div>
+
+    <div id="contacting">
+
+        <div id="contact-info">
+            <h3>Contact Info</h3>
+            <div id="ats">
+
+                <div class="box">
+                    <img src="./images/mail.png">
+                    <span>bei@uw.edu</span>
                 </div>
 
-                <img src="./images/brain-exercise.png" width="455" height="317">
-            </div>
-            <div id="contact-info">
-                <h3>Send a Message</h3>
-                <div id="message-box">
-                    <form>
-                        <input placeholder="Name"><br>
-                        <input placeholder="E-mail"><br>
-                        <input placeholder="Default text..."><br>
-                        <input placeholder="Your message here..."><br>
-                        <input type="submit"><br>
-                    </form>
+                <div class="box">
+                    <img src="./images/instagram.png">
+                    <span>@uw_bei</span>
                 </div>
+
+                <div class="box">
+                    <img src="./images/facebook.png">
+                    <span>@UWBrainExerciseInitiative</span>
+                </div>
+                
+            </div>
+
+            <img id="brain-man" src="./images/brain-exercise.png" width="455" height="317">
+        </div>
+
+        <div id="send-a-message">
+            <h3>Send a Message</h3>
+            <div id="message-box">
+                <form>
+                    <input class="sender-info" placeholder="Name">
+                    <input class="sender-info" placeholder="E-mail">
+                    <input class="sender-info" placeholder="Default text...">
+                    <input id="your-message" placeholder="Your message here...">
+                    <br>
+                    <button type="submit">SUBMIT</button>
+                </form>
             </div>
         </div>
 
-        <footer>
-            <section id="col1">
-                <section id="about">
-                    <h4> About </h4>
-                    <!-- hrefs should be links to these html pages -->
-                    <a href=""> Our Mission </a>
-                    <a href=""> Our Team </a>
-                    <a href=""> Our Story </a>
-                </section>
+    </div>
 
-                <section id="volunteer">
-                    <!-- href should be links to this html pages -->
-                    <h4> Volunteer </h4>
-                    <a href=""> New Volunteers </a>
-                </section>
+    <!-- Footer -->
+
+    <footer>
+        <section id="col1">
+            <section id="about">
+                <h4> About </h4>
+                <!-- hrefs should be links to these html pages -->
+                <a href=""> Our Mission </a>
+                <a href=""> Our Team </a>
+                <a href=""> Our Story </a>
             </section>
 
-            <section id="col2">
-                <section id="questions">
-                    <!-- href should be linked to? -->
-                    <h4> Questions? </h4>
-                    <button id="q_button"> <a href="">Ask us here</a> </button>
-                </section>
+            <section id="volunteer">
+                <!-- href should be links to this html pages -->
+                <h4> Volunteer </h4>
+                <a href=""> New Volunteers </a>
+            </section>
+        </section>
 
-                <section id="connect">
-                    <!-- hrefs should be links to these account pages/email -->
-                    <h4>Connect with us</h4>
-                    <section>
-                        <a href="https://www.facebook.com/UWBrainExerciseInitiative/">
-                            <img src="../footer/img/Facebook.png" alt="Facebook logo">
-                        </a>
-                        <a href="https://www.instagram.com/uw_bei/?hl=en">
-                            <img src="../footer/img/Instagram.png" alt="Instagram logo">
-                        </a>
-                        <a href="mailto:fakeEmail@email.com">
-                            <img src="../footer/img/Mail.png" alt="Envelope icon">
-                        </a>
-                    </section>
-                    <!-- these make little weight _s between icons so maybe this isn't the way to go -->
-                </section>
+        <section id="col2">
+            <section id="questions">
+                <!-- href should be linked to? -->
+                <h4> Questions? </h4>
+                <button id="q_button"> <a href="">Ask us here</a> </button>
             </section>
 
-            <section id="col3">
-                <img src="../footer/img/bei-logo.png" alt="Brain Exercise Initiative logo">
-                <p>
-                  We are a student-run 501(c)(3) nonprofit organization that uses simple math, writing and
-                  reading aloud exercises as an intervention to improve cognitive function in those with
-                  Alzheimer's Disease.
-                </p>
+            <section id="connect">
+                <!-- hrefs should be links to these account pages/email -->
+                <h4>Connect with us</h4>
+                <section>
+                    <a href="https://www.facebook.com/UWBrainExerciseInitiative/">
+                        <img src="../footer/img/Facebook.png" alt="Facebook logo">
+                    </a>
+                    <a href="https://www.instagram.com/uw_bei/?hl=en">
+                        <img src="../footer/img/Instagram.png" alt="Instagram logo">
+                    </a>
+                    <a href="mailto:fakeEmail@email.com">
+                        <img src="../footer/img/Mail.png" alt="Envelope icon">
+                    </a>
+                </section>
+                <!-- these make little weight _s between icons so maybe this isn't the way to go -->
             </section>
-            <p> Copyright © 2022 by UW Brain Exercise Initiative & UW DUBvelopers </p>
-        </footer>
-    </body>
+        </section>
+
+        <section id="col3">
+            <img src="../footer/img/bei-logo.png" alt="Brain Exercise Initiative logo">
+            <p>
+                We are a student-run 501(c)(3) nonprofit organization that uses simple math, writing and
+                reading aloud exercises as an intervention to improve cognitive function in those with
+                Alzheimer's Disease.
+            </p>
+        </section>
+        <p> Copyright © 2022 by UW Brain Exercise Initiative & UW DUBvelopers </p>
+    </footer>
+</body>
+
 </html>
