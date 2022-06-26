@@ -10,25 +10,23 @@
 
 header {
     box-shadow: 0px 2px 4px rgba(75, 46, 131, 0.5);
-    height: 81px;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     background: white;
     z-index: 1;
 }
 
 header .inner {
-    display: block;
-    height: 100%;
-    margin-left: 80px;
-    margin-right: 80px;
-    width: 1350px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 header .logo {
     align-items: center;
     display: table;
-    float: left;
     height: 100%;
     vertical-align: middle;
     width: 210px;
@@ -54,29 +52,28 @@ header .logo p {
     line-height: 20px;
     margin-left: 8px;
     padding: 26px 0px;
+    width:162px;
 }
 
 header nav {
-    float: right;
     height: 100%;
+    width: 70%;
     margin-left: 10px;
+
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header nav li {
-    display: table;
-    height: 100%;
-    float: left;
-    margin-right: 62px;
-    margin-top: 5px;
+    white-space: nowrap;
+    margin-right: 10px;
 }
 
 header nav li:last-of-type {
     margin-right: 0;
-}
-
-header nav span {
-    display: table-cell;
-    vertical-align: middle;
 }
 
 header nav a {
@@ -101,8 +98,6 @@ header .search {
     background: #e5dfeb;
     padding: 1rem;
     border-radius: 0.3rem;
-    margin-top: 11px;
-    margin-left: 35px;
     box-sizing: border-box;
 }
 
