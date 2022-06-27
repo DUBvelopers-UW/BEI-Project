@@ -39,13 +39,18 @@ h1 {
 
 .our-mission {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 646px;
     left: 0px;
     top: 0px;
     margin-top: 81px;
     text-align: center;
     background: #F9F1FF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h2 {
@@ -58,10 +63,6 @@ h2 {
     color: #4B2E83;
 }
 
-.our-mission h2 {
-    padding-top: 160px;
-}
-
 .our-mission p {
     font-family: 'Montserrat';
     font-style: normal;
@@ -71,14 +72,13 @@ h2 {
 
     color: #575757;
 
-    width: 848px;
-    margin: 0 auto;
+    margin: 0px 98px 0px 98px;
     padding-top: 30px;
 }
 
 .our-team {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 3199px;
     left: 0px;
     top: 0px;
@@ -255,28 +255,26 @@ h2 {
 
 .our-story-wrapper {
     position: relative;
-    width: 100vw;
-    height: 1065px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background: #fcfaff;
 }
 
 .our-story {
-    position: relative;
-    width: 52vw;
-    height: 1065px;
-    float: left;
     text-align: center;
+    background-color: #FFFFFF;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background: #fcfaff;
 }
 
 .our-story h2 {
     color: #24173f;
-    padding-top: 160px;
 }
 
 .our-story h3 {
-    position: relative;
     padding-top: 20px;
 
     font-family: 'Montserrat';
@@ -289,9 +287,6 @@ h2 {
 }
 
 .our-story p {
-    position: relative;
-    padding: 50px 50px 50px 80px;
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -303,9 +298,8 @@ h2 {
 }
 
 .our-story a {
-    position: relative;
-    top: 25px;
-    right: 140px;
+    padding-top: 50px;
+    align-self: baseline;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -318,20 +312,27 @@ h2 {
     color: #2C1B4C;
 }
 
-.our-story-wrapper #tableImg {
+/* .our-story-wrapper #tableImg {
     position: absolute;
     float: right;
 
     object-fit: cover;
 
     width: 48vw;
-    height: 1065px;
+    height: 100%;
+} */
+
+.our-story-wrapper #tableImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .our-story-wrapper #overlay {
+    object-fit: cover;
     position: absolute;
     float: right;
-    width: 48vw;
+    width: 50%;
     height: 100%;
 
     top: 0;
