@@ -62,7 +62,7 @@ footer p, footer a {
 }
 
 /* This was not specified in the figma, what should be done in this case */
-footer a:hover {
+footer a:hover, footer button:hover {
   text-decoration: underline;
   text-decoration-color: lavenderblush;
 }
@@ -88,10 +88,6 @@ footer button {
   width: 135px;
   height: 39px;
   margin: 0px;
-}
-
-footer button:hover{
-  background-color: transparent;
 }
 
 #connect section {

@@ -115,9 +115,15 @@ h3{
 
 }
 
-button:hover{
-    background-color: #FFFFFF;
-    color:#4B2E83;
+#button a {
+    color: #FFFBF2;
+}
+
+#button:hover {
+    background-color: transparent !important;
+    border: 2pt solid #4B2E83 !important;
+    /* box-shadow: #4B2E83 !important; */
+    color:#4B2E83 !important;
 }
 
 footer {
