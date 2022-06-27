@@ -70,6 +70,7 @@ header nav {
 header nav li {
     white-space: nowrap;
     margin-right: 10px;
+    padding: 4px;
 }
 
 header nav li:last-of-type {
