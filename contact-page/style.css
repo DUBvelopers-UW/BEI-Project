@@ -77,13 +77,14 @@
     width: 100vw;
     background: #fcfaff;
     padding-bottom: 80px;
+
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #contact-info {
-    padding-left: 140px;
     position: relative;
     width: 555px;
-    float: left;
 }
 
 #ats {
@@ -119,7 +120,6 @@
 #send-a-message {
     position: relative;
     width: auto;
-    float: left;
 }
 
 #message-box {

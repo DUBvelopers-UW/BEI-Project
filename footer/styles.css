@@ -11,7 +11,7 @@ footer {
   font-weight: 500;
 
   position: absolute;
-  width:100%;
+  width:100vw;
 
   display: flex;
   flex-wrap: wrap;
