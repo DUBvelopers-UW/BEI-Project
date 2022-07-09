@@ -107,6 +107,11 @@
     margin-right: 21px;
 }
 
+#ats a {
+    color: #2C1B4C;
+}
+
+
 .box {
     display: flex;
     align-items:center;

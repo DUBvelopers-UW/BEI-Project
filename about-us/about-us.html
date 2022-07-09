@@ -69,14 +69,14 @@
         <img id="icon" src="images/arrow.png" alt="arrow icon">
     </div>
 
-    <div class="our-mission">
+    <div id="our-mission">
         <h2>Our Mission</h2>
         <p>We aim to promote integenerational connections between students and seniors by implementing brain exercise
             techniques for improving the cognitive function of seniors and delaying the progression of Alzheimier’s
             Disease.</p>
     </div>
 
-    <div class="our-team">
+    <div id="our-team">
         <h2>Our Team</h2>
 
         <img id="mem1" class="memImg" src="images/mem1.png">
@@ -154,8 +154,8 @@
         </div>
     </div>
 
-    <div class="our-story-wrapper">
-        <div class="our-story">
+    <div id="our-story-wrapper">
+        <div id="our-story">
             <h2>Our Story</h2>
             <h3>Where we began</h3>
             <p>Esin Gumustekin was inspired by Dr. Ryuta Kawashima's study in Japan that suggested doing simple math and
@@ -175,21 +175,21 @@
     </div>
 
     <!-- Footer -->
-
+    <div id="footer">
     <footer>
         <section id="col1">
             <section id="about">
                 <h4> About </h4>
                 <!-- hrefs should be links to these html pages -->
-                <a href=""> Our Mission </a>
-                <a href=""> Our Team </a>
-                <a href=""> Our Story </a>
+                <a href="#our-mission"> Our Mission </a>
+                <a href="#our-team"> Our Team </a>
+                <a href="#our-story-wrapper"> Our Story </a>
             </section>
 
             <section id="volunteer">
                 <!-- href should be links to this html pages -->
                 <h4> Volunteer </h4>
-                <a href=""> New Volunteers </a>
+                <a href="../volunteer-page/volunteerPage.html"> New Volunteers </a>
             </section>
         </section>
 
@@ -197,7 +197,7 @@
             <section id="questions">
                 <!-- href should be linked to? -->
                 <h4> Questions? </h4>
-                <button id="q_button"> <a href="">Ask us here</a> </button>
+                <button id="q_button" onclick="window.location.href='../contact-page/contact.html#send-a-message';"> <a href="../contact-page/contact.html#send-a-message">Ask us here</a> </button>
             </section>
 
             <section id="connect">
@@ -210,7 +210,7 @@
                     <a href="https://www.instagram.com/uw_bei/?hl=en">
                         <img src="../footer/img/Instagram.png" alt="Instagram logo">
                     </a>
-                    <a href="mailto:fakeEmail@email.com">
+                    <a href="mailto: bei@uw.edu">
                         <img src="../footer/img/Mail.png" alt="Envelope icon">
                     </a>
                 </section>
@@ -228,6 +228,7 @@
         </section>
         <p> Copyright © 2022 by UW Brain Exercise Initiative & UW DUBvelopers </p>
     </footer>
+</div>
 </body>
 
 </html>
