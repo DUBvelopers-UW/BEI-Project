@@ -1,6 +1,6 @@
 /* Stlying for the home page */
 
-.top {
+#top {
   background-image: url("images/home-hero.png");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.52);
@@ -15,7 +15,7 @@
   padding-top: 81px;
 }
 
-.top-text {
+#top-text {
   margin-left:80px;
   padding: 245px 0;
   line-height: 81px;
@@ -191,4 +191,9 @@ footer {
 
 footer p {
   color: white;
+}
+
+/* set width causes page to scroll r to l so all components fill screen completely */
+#top, #bottom, footer {
+  min-width: 731px;
 }

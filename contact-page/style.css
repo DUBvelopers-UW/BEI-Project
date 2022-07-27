@@ -137,6 +137,7 @@
 }
 
 #message-box input, textarea {
+    overflow: hidden;
     padding-left: 16px;
 
     font-family: 'Montserrat';
@@ -146,7 +147,7 @@
     line-height: 180%;
 
     margin-top: 41px;
-    width: 562px;
+    width: 80%;
 
     background: #E5DFEB;
     border: 1px solid #FFFFFF;
@@ -185,4 +186,9 @@
     line-height: 22px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+/* set width causes page to scroll r to l so all components fill screen completely */
+footer, #top-page, #contacting {
+    min-width: 1189px;
 }

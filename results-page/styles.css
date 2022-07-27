@@ -4,10 +4,15 @@ body {
     background-color: #fcfaff;
 }
 
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #results #searchStatement {
-    position: absolute;
-    left: 143px;
-    top: 166px;
+    padding-top: 184px;
+    width:80%;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -20,27 +25,19 @@ body {
 }
 
 #results #line {
-    position: absolute;
-    width: 1202px;
+    width: 80%;
     height: 0px;
-    left: 143px;
-    top: 245px;
 
     border: 0.5px solid #4B2E83;
 }
 
 .results-container {
-    padding-top: 245px;
-}
-
-#results .result-card {
-    margin-top: 50px;
-    margin-left: 145px;
+    padding-top: 30px;
+    width: 80%;
 }
 
 /* Results page */
 #results h3 {
-    width: 337.49px;
     height: 28px;
 
     font-family: 'Montserrat';
@@ -57,7 +54,7 @@ body {
 
 #results .result-content {
     margin: 10px 0;
-    width: 1225px;
+    width: 100%;
     height: auto;
 
     line-height: 45px;
@@ -73,5 +70,7 @@ body {
 }
 
 footer {
-    margin-top: 170px;
+    margin-top: 92px;
+    /* set width causes page to scroll r to l so all components fill screen completely */
+    min-width: 659px;
 }
